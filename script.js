@@ -14,7 +14,7 @@ window.addEventListener('load', ()=>{
 
         //Adding js validation
         if (input.value.length <= 3){
-            alert("A task should be at least 4 characters long.");
+            alert("A task should be at least 3 characters long.");
             return;
         }
 
