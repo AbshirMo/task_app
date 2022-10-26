@@ -29,7 +29,7 @@ window.addEventListener('load', ()=>{
         task_input_el.value = task;
 
         //Adding number to the beginning of task
-        //Creating its own div for more dynamic numbering, i.e changes when items are deletedas well as added
+        //Creating its own div for more dynamic numbering, i.e changes when items are deleted as well as added
         const task_number_el = document.createElement('div');
         task_number_el.classList.add('number');
         task_number_el.type = 'text';
@@ -85,7 +85,7 @@ window.addEventListener('load', ()=>{
 
             list_el.removeChild(task_el);
 
-            //Decrements the number so that it is appropraite after deleting
+            //Decrementing the number so that any new task is numbered appropriately
             num--;
 
         });
