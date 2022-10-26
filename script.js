@@ -3,7 +3,7 @@ window.addEventListener('load', ()=>{
     const form = document.querySelector("#new-task-form");
     const input = document.querySelector("#new-task-input");
     const list_el = document.querySelector("#tasks");
-    //declaring a number to place in the text
+    //declaring a number to place in the list
     let num = 1;
 
     form.addEventListener('submit', (e) => {
@@ -32,7 +32,6 @@ window.addEventListener('load', ()=>{
         //Creating its own div for more dynamic numbering, i.e changes when items are deleted as well as added
         const task_number_el = document.createElement('div');
         task_number_el.classList.add('number');
-        task_number_el.type = 'text';
         task_number_el.innerHTML = num;
         task_content_el.appendChild(task_number_el);
         
@@ -75,7 +74,7 @@ window.addEventListener('load', ()=>{
 
         task_del_el.addEventListener('click', (e)=>{
             
-            //Logic to the delete event to update the numbers in the list
+            //Adding logic to the delete event to subsequently update the numbers in the list
             let el = task_el.nextElementSibling;
 
             while (el){
