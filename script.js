@@ -70,7 +70,7 @@ window.addEventListener('load', ()=>{
             }else{
                 task_edit_el.innerText = "Edit";
                 task_input_el.setAttribute("readonly", "readonly");
-            }  
+            }
         });
 
         task_del_el.addEventListener('click', (e)=>{
